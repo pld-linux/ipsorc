@@ -50,7 +50,7 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 install -d $RPM_BUILD_ROOT%{_prefix}/X11R6/bin/
 
 install -m 544 ipmagic $RPM_BUILD_ROOT%{_bindir}
-install -m 544 magic $RPM_BUILD_ROOT%{_prefix}/X11R6/bin/
+install -m 544 magic $RPM_BUILD_ROOT%{_prefix}/X11R6/bin/gipmagic
 
 gzip -9nf README
 
