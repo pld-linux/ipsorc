@@ -1,8 +1,8 @@
 Summary:	IP Sorcery
 Summary(pl):	Generator pakietów IP
 Name:		ipsorc
-Version:	1.4
-Release:	2
+Version:	1.5
+Release:	1
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.legions.org/~phric/%{name}-%{version}.tar.gz
