@@ -1,7 +1,8 @@
 Summary:	IP Sorcery
+Summary(pl):	Generator pakietów IP
 Name:		ipsorc
 Version:	1.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Networking
 Group(de):	Applikationen/Netzwerkwesen
@@ -11,6 +12,8 @@ Patch0:		%{name}-Makefile.patch
 URL:		http://www.legions.org/~phric/ipsorcery.html
 BuildRequires:	gtk+-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_xbindir	/usr/X11R6/bin
 
 %description
 IP Sorcery is a TCP/IP packet generator. It has the ability to send
@@ -22,6 +25,7 @@ UDP, oraz ICMP. Obs³uguje IPv4 i IPv6.
 
 %package gtk
 Summary:	IP Sorcery
+Summary(pl):	Generator pakietów IP
 Group:		X11/Applications/Networking
 Group(de):	X11/Applikationen/Netzwerkwesen
 Group(pl):	X11/Aplikacje/Sieciowe
@@ -32,7 +36,7 @@ TCP, UDP, and ICMP packets with a GTK+ interface.
 
 %description gtk -l pl
 IP Sorcery to generator pakietów TCP/IP. Umie wysy³aæ pakiety TCP,
-UDP, oraz ICMP ko¿ystaj±c z graficznego interfejsu GTK+. Obs³uguje
+UDP, oraz ICMP korzystaj±c z graficznego interfejsu GTK+. Obs³uguje
 IPv4 i IPv6.
 
 %prep
@@ -45,10 +49,10 @@ IPv4 i IPv6.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_prefix}/X11R6/bin}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_xbindir}}
 
 install ipmagic $RPM_BUILD_ROOT%{_bindir}
-install magic $RPM_BUILD_ROOT%{_prefix}/X11R6/bin/gipmagic
+install magic $RPM_BUILD_ROOT%{_xbindir}/gipmagic
 
 gzip -9nf README
 
@@ -58,9 +62,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README.gz
-%{_bindir}/*
+%attr(755,root,root) %{_bindir}/*
 
 %files gtk
 %defattr(644,root,root,755)
 %doc README.gz
-%{_prefix}/X11R6/bin/*
+%attr(755,root,root) %{_xbindir}/*
