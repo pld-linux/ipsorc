@@ -5,8 +5,6 @@ Version:	1.4
 Release:	2
 License:	GPL
 Group:		Applications/Networking
-Group(de):	Applikationen/Netzwerkwesen
-Group(pl):	Aplikacje/Sieciowe
 Source0:	http://www.legions.org/~phric/%{name}-%{version}.tar.gz
 Patch0:		%{name}-Makefile.patch
 URL:		http://www.legions.org/~phric/ipsorcery.html
@@ -27,8 +25,6 @@ UDP, oraz ICMP. Obs³uguje IPv4 i IPv6.
 Summary:	IP Sorcery
 Summary(pl):	Generator pakietów IP
 Group:		X11/Applications/Networking
-Group(de):	X11/Applikationen/Netzwerkwesen
-Group(pl):	X11/Aplikacje/Sieciowe
 
 %description gtk
 IP Sorcery is a TCP/IP packet generator. It has the ability to send
