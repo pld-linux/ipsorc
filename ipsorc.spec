@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.legions.org/~phric/%{name}-%{version}.tar.gz
+# Source0-md5:	923149398a7e9caf894c4dfa2f982baa
 Patch0:		%{name}-Makefile.patch
 URL:		http://www.legions.org/~phric/ipsorcery.html
 BuildRequires:	gtk+-devel
