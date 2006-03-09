@@ -41,8 +41,8 @@ IPv4 i IPv6.
 %patch0 -p1
 
 %build
-%{__make} CFLAGS="%{rpmcflags}" CC=%{__cc} con
-%{__make} CFLAGS="%{rpmcflags}" CC=%{__cc} gtk
+%{__make} CFLAGS="%{rpmcflags}" CC="%{__cc}" con
+%{__make} CFLAGS="%{rpmcflags}" CC="%{__cc}" gtk
 
 %install
 rm -rf $RPM_BUILD_ROOT
