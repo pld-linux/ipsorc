@@ -12,8 +12,6 @@ URL:		http://www.legions.org/~phric/ipsorcery.html
 BuildRequires:	gtk+-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_xbindir	/usr/X11R6/bin
-
 %description
 IP Sorcery is a TCP/IP packet generator. It has the ability to send
 TCP, UDP, and ICMP packets.
@@ -46,10 +44,10 @@ IPv4 i IPv6.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_xbindir}}
+install -d $RPM_BUILD_ROOT%{_bindir}
 
 install ipmagic $RPM_BUILD_ROOT%{_bindir}
-install magic $RPM_BUILD_ROOT%{_xbindir}/gipmagic
+install magic $RPM_BUILD_ROOT%{_bindir}/gipmagic
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -57,9 +55,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/ipmagic
 
 %files gtk
 %defattr(644,root,root,755)
 %doc README
-%attr(755,root,root) %{_xbindir}/*
+%attr(755,root,root) %{_bindir}/gipmagic
