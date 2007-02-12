@@ -1,5 +1,5 @@
 Summary:	IP Sorcery
-Summary(pl):	Generator pakietów IP
+Summary(pl.UTF-8):   Generator pakietÃ³w IP
 Name:		ipsorc
 Version:	1.5
 Release:	1
@@ -16,22 +16,22 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 IP Sorcery is a TCP/IP packet generator. It has the ability to send
 TCP, UDP, and ICMP packets.
 
-%description -l pl
-IP Sorcery to generator pakietów TCP/IP. Umie wysy³aæ pakiety TCP,
-UDP, oraz ICMP. Obs³uguje IPv4 i IPv6.
+%description -l pl.UTF-8
+IP Sorcery to generator pakietÃ³w TCP/IP. Umie wysyÅ‚aÄ‡ pakiety TCP,
+UDP, oraz ICMP. ObsÅ‚uguje IPv4 i IPv6.
 
 %package gtk
 Summary:	IP Sorcery
-Summary(pl):	Generator pakietów IP
+Summary(pl.UTF-8):   Generator pakietÃ³w IP
 Group:		X11/Applications/Networking
 
 %description gtk
 IP Sorcery is a TCP/IP packet generator. It has the ability to send
 TCP, UDP, and ICMP packets with a GTK+ interface.
 
-%description gtk -l pl
-IP Sorcery to generator pakietów TCP/IP. Umie wysy³aæ pakiety TCP,
-UDP, oraz ICMP korzystaj±c z graficznego interfejsu GTK+. Obs³uguje
+%description gtk -l pl.UTF-8
+IP Sorcery to generator pakietÃ³w TCP/IP. Umie wysyÅ‚aÄ‡ pakiety TCP,
+UDP, oraz ICMP korzystajÄ…c z graficznego interfejsu GTK+. ObsÅ‚uguje
 IPv4 i IPv6.
 
 %prep
