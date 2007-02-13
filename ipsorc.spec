@@ -1,5 +1,5 @@
 Summary:	IP Sorcery
-Summary(pl.UTF-8):   Generator pakietów IP
+Summary(pl.UTF-8):	Generator pakietów IP
 Name:		ipsorc
 Version:	1.5
 Release:	1
@@ -22,7 +22,7 @@ UDP, oraz ICMP. Obsługuje IPv4 i IPv6.
 
 %package gtk
 Summary:	IP Sorcery
-Summary(pl.UTF-8):   Generator pakietów IP
+Summary(pl.UTF-8):	Generator pakietów IP
 Group:		X11/Applications/Networking
 
 %description gtk
